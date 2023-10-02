@@ -17,6 +17,17 @@ public class Learner {
         System.out.println("Learner: " + this.name + " is learning " + this.tech.name() + " now!");
     }
 
+    public void switchTech(Tech newTech){
+        Tech tempTech = this.tech;
+        if (this.tech != tempTech){
+            this.setTech(newTech);
+            System.out.println("Learner: " + this.name + " is switched: " + tempTech.name() + " to: " + newTech.name());
+        }
+        else{
+            System.out.println("Learner: " + this.name + " already learn: " + this.tech.name());
+        }
+    }
+
     public String getName(){
         return this.name;
     }
