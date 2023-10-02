@@ -14,17 +14,17 @@ public class Learner {
     }
 
     public void learn(){
-        System.out.println("Learner: " + this.name + " is learning " + this.tech.name() + " now!");
+        System.out.println("Learner " + this.name + " is learning " + this.tech.name() + " now!");
     }
 
     public void switchTech(Tech newTech){
-        Tech tempTech = this.tech;
-        if (this.tech != tempTech){
+        if (this.tech != newTech){
+            Tech tempTech = this.tech;
             this.setTech(newTech);
-            System.out.println("Learner: " + this.name + " is switched: " + tempTech.name() + " to: " + newTech.name());
+            System.out.println("Learner " + this.name + " is switched " + tempTech.name() + " to " + newTech.name());
         }
-        else{
-            System.out.println("Learner: " + this.name + " already learn: " + this.tech.name());
+        else if(this.tech == newTech){
+            System.out.println("Learner " + this.name + " already learn " + this.tech.name());
         }
     }
 
