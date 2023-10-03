@@ -1,0 +1,8 @@
+//We create professions at the enterprise
+         //A security guard is characterized by the ability to guard. Salary 15_000
+         //It is typical for an accountant to calculate taxes. Accountant office worker. Salary 50_000
+         //It is typical for a secretary to type documents. Secretary office worker. Salary 30_000
+         //Every office worker knows how to drink coffee.
+         //Every person knows how to receive a salary (characteristic of his profession).
+         //Every person has a gender.
+         //Recreate such a structure in java.
