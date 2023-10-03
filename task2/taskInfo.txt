@@ -1,0 +1,6 @@
+//Create a directory of countries
+         //The class reference must have 3 countries: France, Argentina, Italy
+         //France has 67_000_000 people, French language, continent: Eurasia
+         //Argentina has 47_000_000 people, Spanish language, continent: South America
+         //Italy has 58_000_000 people, Italian language, continent: Eurasia
+         //When getting a country from a directory, we can get each attribute individually
