@@ -1,11 +1,17 @@
 package learner;
 
+import core.Core;
+import core.Person;
 import core.Tech;
 
-public class Learner {
+public class Learner extends Person {
     private String name;
     private int age;
     private Tech tech;
+
+    {
+        this.id = Core.random(0, 1000);
+    }
 
     public Learner(String name, int age, Tech tech){
         this.name = name;
@@ -53,6 +59,15 @@ public class Learner {
 
     @Override
     public String toString(){
-        return "Name: " + this.name + "\nAge: " + this.age + "\nTech: " + tech.name();
+        return "Id: " + this.id + "\nName: " + this.name + "\nAge: " + this.age + "\nTech: " + tech.name();
+    }
+
+    public void speak(String message){
+        System.out.println(String.format("Learner %s say %s", this.name, message));
+    }
+
+    @Override
+    public void run(){
+        System.out.println("Learner " + this.name + " is running now!");
     }
 }
