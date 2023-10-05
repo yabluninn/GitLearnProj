@@ -2,9 +2,12 @@
 // import learner.Learner;
 
 // import task2.CountriesDirectory;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
+import dependency_inversion.DogZoo;
+import dependency_inversion.Poodle;
+import dependency_inversion.Shepherd;
+import dependency_inversion.Terier;
 import task3.Airplane;
 import task3.Duck;
 import task3.Fish;
@@ -36,19 +39,27 @@ public class Main {
         // System.out.println("France language is: " + countriesDirectory.france.getLanguage());
         // System.out.println("Italy continent is: " + countriesDirectory.italy.getContinent());
 
-        Fish fish = new Fish();
-        Duck duck = new Duck();
-        Airplane airplane = new Airplane();
+        // Fish fish = new Fish();
+        // Duck duck = new Duck();
+        // Airplane airplane = new Airplane();
 
-        Swimmable[] pool = new Swimmable[2];
-        pool[0] = fish;
-        pool[1] = duck;
+        // Swimmable[] pool = new Swimmable[2];
+        // pool[0] = fish;
+        // pool[1] = duck;
 
-        Flyable[] sky = new Flyable[2];
-        sky[0] = duck;
-        sky[1] = airplane;
+        // Flyable[] sky = new Flyable[2];
+        // sky[0] = duck;
+        // sky[1] = airplane;
 
-        System.out.println("Pool: " + Arrays.toString(pool));
-        System.out.println("Sky: " + Arrays.toString(sky));
+        // System.out.println("Pool: " + Arrays.toString(pool));
+        // System.out.println("Sky: " + Arrays.toString(sky));
+
+        Poodle poodle = new Poodle();
+        Shepherd shephed = new Shepherd();
+
+        Terier terier = new Terier();
+
+        DogZoo dogZoo = new DogZoo(poodle, shephed);
+        DogZoo dogZoo2 = new DogZoo(poodle, terier);
     }
 }
