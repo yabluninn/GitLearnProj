@@ -57,9 +57,13 @@ public class Learner extends Person {
         this.tech = value;
     }
 
+    public int getId(){
+        return this.id;
+    }
+
     @Override
     public String toString(){
-        return "Id: " + this.id + "\nName: " + this.name + "\nAge: " + this.age + "\nTech: " + tech.name();
+        return "Id: " + this.id + " Name: " + this.name + " Age: " + this.age + " Tech: " + tech.name();
     }
 
     public void speak(String message){
@@ -69,5 +73,10 @@ public class Learner extends Person {
     @Override
     public void run(){
         System.out.println("Learner " + this.name + " is running now!");
+    }
+
+    @Override
+    public int hashCode(){
+        return this.name.hashCode();
     }
 }
