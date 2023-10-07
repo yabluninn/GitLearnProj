@@ -1,0 +1,7 @@
+//There are three classes:
+         //Fish - can swim
+         //Duck - can swim and fly
+         //Airplane - can fly
+         //Create an instance of each class, creating interfaces
+         //Throw swimmers into the pool (only objects that can swim can be in it)
+         //Send flying people into the sky (only objects that can fly can be in it)
